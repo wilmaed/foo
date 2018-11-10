@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+<title>
+ Titel </title><meta charset="utf-8" /></head>
+<body >
+<script type = "text/javascript" src = "vue/dist/vue.min.js"></script>
+
+
+
+
+<div id="a">
+  <label><input type="radio" v-model="foo" value="1"> eins</label>
+  <label><input type="radio" v-model="foo" value="2"> zwei</label>
+  <label><input type="radio" v-model="foo" value="3"> drei</label>
+
+  <p>foo ist: {{ foo }}</p>
+</div>
+<script>
+  $foobar = new Vue({
+    el: '#a',
+    data: {
+      foo: 2
+    }
+  });
+
+
+setInterval(()=>{console.log($foobar.foo)},1000)
+
+</script>
+
+
+
+
+
+</body>
+
+</body>
+</html>
+
+<!--
+https://flaviocopes.com/javascript-promises/
+
+https://flaviocopes.com/vue-introduction/
+-->
